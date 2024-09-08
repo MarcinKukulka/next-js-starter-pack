@@ -1,3 +1,4 @@
+import { env } from '@env';
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: {
         languages: {
-          pl: `${process.env.APP_URL}/pl`,
+          pl: `${env.APP_URL}/pl`,
         },
       },
     },
